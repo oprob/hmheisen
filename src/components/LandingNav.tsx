@@ -2,14 +2,15 @@ import GovUKLogo from "@/components/GovUKLogo";
 
 const LandingNav = () => {
   return (
+
 <header className="w-full">
       <div className="bg-black text-white p-3">
-        <div className="max-w-4xl mx-auto flex justify-between items-center relative">
-          <div className="flex items-center">
+        <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center sm:justify-between">
+          <div className="flex items-center justify-start w-full sm:w-auto">
             <GovUKLogo />
             <span className="ml-2 font-bold text-2xl">GOV.UK</span>
           </div>
-          <span className="absolute left-1/2 transform -translate-x-1/2 font-bold text-2xl">
+          <span className="gov-gateway-text font-bold text-xl mt-2 sm:mt-0">
             Government Gateway
           </span>
         </div>
@@ -20,6 +21,7 @@ const LandingNav = () => {
       </div>
       
 
+    
     
       <div className="max-w-4xl mx-auto flex justify-start p-4">
         <nav className="flex  space-x-2 text-sm">

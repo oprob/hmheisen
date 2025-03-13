@@ -60,3 +60,17 @@
 .custom-underline:hover::after {
   background-color: currentColor;
 }
+.gov-gateway-text {
+  text-align: left;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .gov-gateway-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: auto;
+  }
+}
