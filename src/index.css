@@ -1,0 +1,62 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gov-white text-gov-black font-gov;
+  }
+
+  a {
+    @apply text-gov-blue hover:underline focus:outline-none focus:bg-yellow-400 focus:text-gov-black;
+  }
+}
+
+.gov-header {
+  @apply bg-gov-black text-gov-white py-2;
+}
+
+.gov-main-nav {
+  @apply max-w-7xl mx-auto px-4;
+}
+
+.gov-breadcrumb {
+  @apply py-4 text-gov-small;
+}
+
+.gov-content {
+  @apply max-w-3xl mx-auto px-4 py-8;
+}
+
+.gov-footer {
+  @apply bg-gov-light-grey border-t border-gov-grey mt-12 py-12;
+}
+
+.gov-button {
+  @apply bg-gov-green text-gov-white px-8 py-2 text-gov-body font-bold hover:bg-green-800;
+}
+
+.gov-list {
+  @apply list-disc pl-5 space-y-2;
+}
+
+.custom-underline {
+  position: relative;
+  
+}
+
+.custom-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0px; /* Adjust this value to move the underline */
+  width: 100%;
+  height: 1px;
+  background-color: currentColor;
+  transition: background-color 0.3s;
+}
+
+.custom-underline:hover::after {
+  background-color: currentColor;
+}
